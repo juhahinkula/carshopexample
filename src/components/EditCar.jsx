@@ -12,7 +12,7 @@ export default function EditCar({ cardata, fetchCars }) {
     model: '',
     color: '',
     fuel: '',
-    year: '',
+    modelYear: '',
     price: ''
   });
   const [open, setOpen] = useState(false);
@@ -25,7 +25,7 @@ export default function EditCar({ cardata, fetchCars }) {
       color: cardata.color,
       fuel: cardata.fuel,
       price: cardata.price,
-      year: cardata.year
+      modelYear: cardata.modelYear
     })
     setOpen(true);
   };

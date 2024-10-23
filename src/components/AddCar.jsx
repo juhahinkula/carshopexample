@@ -12,7 +12,7 @@ export default function AddCar({ fetchCars }) {
     model: '',
     color: '',
     fuel: '',
-    year: '',
+    modelYear: '',
     price: ''
   });
   const [open, setOpen] = useState(false);

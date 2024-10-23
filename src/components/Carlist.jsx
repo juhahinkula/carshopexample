@@ -34,11 +34,11 @@ function Carlist() {
   }
 
   const [columnDefs] = useState([
-    { field: 'brand', sortable: true, filter: true },
-    { field: 'model', sortable: true, filter: true },
-    { field: 'color', sortable: true, filter: true },
+    { field: 'brand', sortable: true, filter: true, width: 180 },
+    { field: 'model', sortable: true, filter: true, width: 180 },
+    { field: 'color', sortable: true, filter: true, width: 150 },
     { field: 'fuel', sortable: true, filter: true, width: 100 },
-    { field: 'year', sortable: true, filter: true, width: 100 },
+    { field: 'modelYear', sortable: true, filter: true, width: 100 },
     { field: 'price', sortable: true, filter: true, width: 120 },
     {
       cellRenderer: params => <EditCar cardata={params.data} fetchCars={getCars} />,
@@ -64,6 +64,7 @@ function Carlist() {
           columnDefs={columnDefs}
           pagination={true}
           paginationAutoPageSize={true}
+          suppressCellFocus={true}
         />
       </div>
       <Snackbar 

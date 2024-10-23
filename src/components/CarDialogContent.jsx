@@ -43,8 +43,8 @@ export default function CarDialogContent({ car, handleChange }) {
       <TextField
         margin="dense"
         label="Year"
-        name="year"
-        value={car.year}
+        name="modelYear"
+        value={car.modelYear}
         onChange={handleChange}
         fullWidth
         variant="standard"
